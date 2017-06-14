@@ -1,7 +1,7 @@
 header {
     background-color: #244751;
     color: #E8FDFF;
-    font-family: "Mogra";
+    font-family: 'Mogra', cursive;
 }    
 
 body {
@@ -11,6 +11,7 @@ body {
 main {
     background-color: white;
     padding: 16px;
+    font-family: 'Bubbler One', sans-serif;
 }
 
 .post {
