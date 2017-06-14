@@ -26,3 +26,20 @@ post '/signup' do
     end
 end
 
+get '/login' do
+    erb(:login)
+end
+
+post '/login' do
+    username = params[:username]
+    password = params[:password]
+    
+    user = User.find_by(username: username)
+    
+        if user && user.password == password
+        session[:user_id] =user.id
+        "Success! User with id #{session[:user_iid]} is logged in!"
+        else
+        "Login Failed."
+        end
+end
